@@ -64,10 +64,10 @@ const groups=[
 {x:535,y:594,w:370,h:91,r:2,c:10,n:[194,195,196,197,198,199,200,201,202,203,210,205,206,207,208,209,210,211,212,213]}
 ];
 const demo={name:"أحمد محمد",phone:"01012345678",notes:"بيانات وصور تجريبية لشرح فكرة النظام للعميل.",photos:[
-{url:"https://dehome.ai/nuxt_img/floor-plan-editor/example/architectural-elevation-example.webp",label:"صورة المنزل"},
-{url:"https://static.wixstatic.com/media/831332_e50d4ae953164dc9a19f9709879c6bd6~mv2.png/v1/fill/w_1000%2Ch_571%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01/831332_e50d4ae953164dc9a19f9709879c6bd6~mv2.png",label:"عداد المياه"},
-{url:"https://www.inmobiliariaesmar.com/img/slider_2_pisos-casas-parcelas-algimia-alfara.png?noCache=1887931017",label:"واجهة المنزل"},
-{url:"https://lirp.cdn-website.com/17a155d8/dms3rep/multi/opt/residential-water-metar-1920w.jpg",label:"صورة إضافية للعداد"}
+{url:"assets/demo-home.svg",label:"صورة المنزل"},
+{url:"assets/demo-meter.svg",label:"عداد المياه"},
+{url:"assets/demo-house-2.svg",label:"واجهة المنزل"},
+{url:"assets/demo-pipes.svg",label:"صورة إضافية للعداد"}
 ]};
 let selected=null,zoom=1;const $=id=>document.getElementById(id);
 function draw(){const svg=$("overlay");svg.innerHTML="";groups.forEach(g=>g.n.forEach((n,i)=>{if(!n)return;let cw=g.w/g.c,ch=g.h/g.r,el=document.createElementNS(NS,"rect");el.setAttribute("x",g.x+(i%g.c)*cw+1);el.setAttribute("y",g.y+Math.floor(i/g.c)*ch+1);el.setAttribute("width",cw-2);el.setAttribute("height",ch-2);el.setAttribute("rx",3);el.setAttribute("class","plot"+(String(n)===String(selected)?" selected":""));el.dataset.num=n;el.setAttribute("aria-label","القطعة رقم "+n);el.onclick=()=>choose(n);svg.appendChild(el)}))}
