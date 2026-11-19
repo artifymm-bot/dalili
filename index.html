@@ -2,44 +2,47 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#102b46"><title>طارق | دليل المنازل</title>
+<meta name="theme-color" content="#123f78"><title>طارق | نظام محصل المياه</title>
 <style>
-:root{--navy:#102b46;--blue:#1976d2;--bg:#f3f6fa;--line:#e4eaf1;--muted:#6d7c8e}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#172536;font-family:Tahoma,Arial,sans-serif}
-header{height:62px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 14px;gap:10px;position:sticky;top:0;z-index:10}
-.brand{display:flex;align-items:center;gap:9px;font-weight:800}.mark{width:36px;height:36px;border-radius:11px;background:#ffffff20;display:grid;place-items:center;font-size:21px}
-.header-actions{display:flex;gap:7px}.pill{border:1px solid #ffffff55;background:#ffffff12;color:white;border-radius:22px;padding:8px 11px;font-size:12px;font-weight:700}
-main{max-width:1440px;margin:auto;padding:12px;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:12px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 5px 20px #15283b0a}
-.map-top{display:flex;gap:7px;padding:11px;border-bottom:1px solid var(--line);align-items:center;flex-wrap:wrap}
-.search{flex:1;min-width:160px}.search input{width:100%;border:1px solid var(--line);background:#f8fafc;border-radius:10px;padding:11px;font-size:14px}
-button{cursor:pointer;font-family:inherit}.tool{border:1px solid var(--line);background:white;border-radius:10px;padding:9px 11px;font-weight:700;color:#33465b}.primary{background:var(--blue);border-color:var(--blue);color:white}
-.hint{font-size:12px;color:var(--muted);padding:9px 12px}.map-scroll{overflow:auto;max-height:calc(100vh - 180px);background:#f9fbfd;touch-action:pan-x pan-y}
+:root{--navy:#123f78;--blue:#1676df;--bg:#f1f5fa;--line:#dce5ef;--muted:#6d7d90}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#14243a;font-family:Tahoma,Arial,sans-serif}
+header{height:70px;background:linear-gradient(110deg,#123b70,#0b2e5a);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 18px;gap:12px;position:sticky;top:0;z-index:10;box-shadow:0 3px 14px #102b4620}
+.brand{display:flex;align-items:center;gap:12px;font-size:21px;font-weight:800}.mark{width:42px;height:42px;border-radius:50%;background:#ffffff18;display:grid;place-items:center;font-size:25px}
+.demo-label{background:#ffffff18;border:1px solid #ffffff45;border-radius:20px;padding:8px 13px;font-size:12px;font-weight:700}
+main{max-width:1600px;margin:auto;padding:14px;display:grid;grid-template-columns:minmax(0,1fr) 370px;gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 5px 22px #15283b0b}
+.map-top{display:flex;gap:8px;padding:12px;border-bottom:1px solid var(--line);align-items:center;flex-wrap:wrap}
+.search{flex:1;min-width:170px}.search input{width:100%;border:1px solid var(--line);background:#f7f9fc;border-radius:11px;padding:12px;font-size:14px;outline:none}
+button{cursor:pointer;font-family:inherit}.tool{border:1px solid var(--line);background:white;border-radius:10px;padding:10px 13px;font-weight:700;color:#33465b}.primary{background:var(--blue);border-color:var(--blue);color:white}
+.hint{font-size:12px;color:var(--muted);padding:10px 13px}.map-scroll{overflow:auto;max-height:calc(100vh - 190px);background:#f8fafc;touch-action:pan-x pan-y}
 .stage{position:relative;width:100%;min-width:650px;line-height:0}.stage img{display:block;width:100%;height:auto;pointer-events:none;user-select:none}
-#overlay{position:absolute;inset:0;width:100%;height:100%}.plot{fill:#1685e5;fill-opacity:.015;stroke:#1478d2;stroke-opacity:.1;stroke-width:1.2;vector-effect:non-scaling-stroke;cursor:pointer}.plot:hover{fill-opacity:.3;stroke-opacity:.9;stroke-width:2.5}.plot.selected{fill-opacity:.55;stroke:#075cae;stroke-opacity:1;stroke-width:3}
-.legend{padding:9px 12px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}.details{position:sticky;top:74px;height:fit-content;max-height:calc(100vh - 86px);overflow:auto}
-.dhead{padding:15px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.dhead h2{font-size:16px;margin:0}.tag{font-size:11px;background:#eaf3ff;color:#1264ad;border-radius:20px;padding:6px 9px;font-weight:800}
-.dbody{padding:13px}.empty{text-align:center;color:var(--muted);padding:32px 10px;line-height:1.9}.customer{font-size:18px;font-weight:800;margin:10px 0 4px}.meta{font-size:13px;color:var(--muted);margin:6px 0}
-.photos{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.photo{aspect-ratio:4/3;background:#edf2f7;border-radius:11px;overflow:hidden;position:relative;display:grid;place-items:center;color:#8795a5;font-size:12px;border:1px solid var(--line)}.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo span{z-index:1;background:#ffffffd9;padding:5px 8px;border-radius:20px}
-.notes{background:#f7f9fc;padding:10px;border-radius:10px;font-size:13px;line-height:1.7;margin-top:11px;white-space:pre-wrap}.actions{display:flex;gap:8px;margin-top:13px}.actions button{flex:1}
-.mobilebar{display:none}.modalback{position:fixed;inset:0;background:#07172780;display:none;align-items:center;justify-content:center;padding:14px;z-index:30}.modalback.show{display:flex}.modal{background:white;border-radius:17px;width:min(520px,100%);max-height:90vh;overflow:auto;padding:17px}.field{display:block;margin:10px 0;font-size:13px;font-weight:700}.field input,.field textarea{display:block;width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;margin-top:6px;font:inherit}.field textarea{min-height:70px}.modalactions{display:flex;gap:8px;margin-top:14px}.modalactions button{flex:1}
-@media(max-width:850px){main{display:block;padding:8px}.details{display:none}.map-scroll{max-height:calc(100dvh - 145px)}.stage{min-width:720px}.mobilebar{display:flex;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));z-index:12;align-items:center;gap:10px;box-shadow:0 -5px 20px #14283a12}.summary{flex:1;min-width:0}.summary strong{display:block;font-size:13px}.summary small{color:var(--muted)}.panel{position:fixed;inset:auto 0 0;background:white;border-radius:20px 20px 0 0;z-index:25;box-shadow:0 -10px 40px #102b4630;max-height:82dvh;overflow:auto;transform:translateY(110%);transition:transform .22s;padding-bottom:calc(70px + env(safe-area-inset-bottom))}.panel.open{transform:translateY(0)}.panel .dhead{position:sticky;top:0;background:white}.close{border:0;background:#f0f3f7;border-radius:50%;width:32px;height:32px;font-size:18px}}
+#overlay{position:absolute;inset:0;width:100%;height:100%}.plot{fill:#1685e5;fill-opacity:.015;stroke:#1478d2;stroke-opacity:.08;stroke-width:1.1;vector-effect:non-scaling-stroke;cursor:pointer}.plot:hover{fill-opacity:.28;stroke-opacity:.9;stroke-width:2.4}.plot.selected{fill:#1685e5;fill-opacity:.6;stroke:#075cae;stroke-opacity:1;stroke-width:3}
+.legend{padding:10px 13px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}.dot{width:10px;height:10px;border-radius:50%;background:#1676df;display:inline-block}
+.details{position:sticky;top:84px;height:fit-content;max-height:calc(100vh - 100px);overflow:auto}
+.dhead{padding:17px;background:#124782;color:white;display:flex;justify-content:space-between;align-items:center}.dhead h2{font-size:18px;margin:0}.tag{font-size:12px;background:#e7f1ff;color:#1264ad;border-radius:20px;padding:7px 11px;font-weight:800}
+.dbody{padding:14px}.empty{text-align:center;color:var(--muted);padding:35px 10px;line-height:2}.plot-title{background:#e8f1ff;color:#102d58;text-align:center;padding:12px;border-radius:12px;font-size:21px;font-weight:800;margin-bottom:12px}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.photo{aspect-ratio:4/3;background:#edf2f7;border-radius:11px;overflow:hidden;position:relative;border:1px solid var(--line);padding:0}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .2s}.photo:hover img{transform:scale(1.04)}.photo span{position:absolute;bottom:7px;right:7px;background:#ffffffdf;color:#20354c;padding:5px 8px;border-radius:7px;font-size:11px;font-weight:700}
+.info{border-bottom:1px solid var(--line);padding:11px 2px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.info:last-of-type{border:0}.info-label{color:#64748b;font-size:12px;margin-bottom:5px}.info-value{font-weight:800;font-size:16px;line-height:1.5}.info-icon{font-size:19px;color:#15569a}
+.actions{display:flex;gap:8px;margin-top:14px}.actions a,.actions button{flex:1;text-align:center;text-decoration:none;border-radius:11px;padding:12px 8px;font-weight:800;font-size:13px}.call{background:#1676df;color:white}.gallery{background:white;color:#1264ad;border:1px solid #9fc6f6}
+.notice{font-size:11px;color:#748398;text-align:center;padding:10px 0 0}
+.mobilebar{display:none}.panel{display:none}.lightbox{position:fixed;inset:0;background:#06172dcc;z-index:50;align-items:center;justify-content:center;padding:18px;display:none}.lightbox.show{display:flex}.lightbox img{max-width:min(900px,96vw);max-height:86vh;object-fit:contain;border-radius:12px}.lightbox button{position:absolute;top:18px;left:18px;background:white;border:0;border-radius:50%;width:40px;height:40px;font-size:25px}
+@media(max-width:900px){main{display:block;padding:8px}.details{display:none}.map-scroll{max-height:calc(100dvh - 160px)}.stage{min-width:720px}.mobilebar{display:flex;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));z-index:12;align-items:center;gap:10px;box-shadow:0 -5px 20px #14283a12}.summary{flex:1;min-width:0}.summary strong{display:block;font-size:13px}.summary small{color:var(--muted)}.panel{display:block;position:fixed;inset:auto 0 0;background:white;border-radius:20px 20px 0 0;z-index:25;box-shadow:0 -10px 40px #102b4630;max-height:83dvh;overflow:auto;transform:translateY(110%);transition:transform .22s;padding-bottom:calc(74px + env(safe-area-inset-bottom))}.panel.open{transform:translateY(0)}.panel .dhead{position:sticky;top:0}.close{border:0;background:#ffffff25;color:white;border-radius:50%;width:32px;height:32px;font-size:21px}}
 </style>
 </head>
 <body>
-<header><div class="brand"><div class="mark">⌂</div><div>طارق<small style="display:block;opacity:.7;font-size:10px;font-weight:400">دليل المنازل – محصل المياه</small></div></div><div class="header-actions"><button class="pill" id="modeBtn">وضع المحصل</button><button class="pill" id="adminBtn">دخول المدير</button></div></header>
+<header><div class="brand"><div class="mark">💧</div><div>نظام محصل المياه</div></div><div class="demo-label">نسخة تجريبية للعرض</div></header>
 <main>
 <section class="card">
-<div class="map-top"><div class="search"><input id="search" type="search" placeholder="ابحث برقم القطعة"></div><button class="tool primary" id="go">انتقال</button><button class="tool" id="zin">＋</button><button class="tool" id="zout">－</button><button class="tool" id="reset">ملاءمة</button></div>
-<div class="hint">اضغط داخل حدود القطعة لعرض بيانات المنزل وصوره. اسحب المخطط للتنقل.</div>
-<div class="map-scroll" id="mapScroll"><div class="stage" id="stage"><img src="assets/plan.png" alt="مخطط الوحدة المحلية"><svg id="overlay" viewBox="0 0 1117 746" preserveAspectRatio="none"></svg></div></div>
-<div class="legend">🔵 القطعة المحددة · نسخة تجريبية ببيانات محفوظة على هذا الجهاز</div>
+<div class="map-top"><div class="search"><input id="search" type="search" placeholder="ابحث برقم القطعة"></div><button class="tool primary" id="go">انتقال</button><button class="tool" id="zin" aria-label="تكبير">＋</button><button class="tool" id="zout" aria-label="تصغير">－</button><button class="tool" id="reset">ملاءمة</button></div>
+<div class="hint">اضغط على أي قطعة في المخطط لعرض بيانات المنزل والصور التجريبية.</div>
+<div class="map-scroll" id="mapScroll"><div class="stage" id="stage"><img src="assets/demo-plan.svg" alt="مخطط تجريبي للمنطقة السكنية"><svg id="overlay" viewBox="0 0 1117 746" preserveAspectRatio="none" aria-label="اختيار قطعة"></svg></div></div>
+<div class="legend"><span class="dot"></span> القطعة المحددة <span style="margin-right:auto">مخطط وصور تجريبية قابلة للاستبدال بالبيانات الأصلية</span></div>
 </section>
-<aside class="card details"><div class="dhead"><h2>تفاصيل القطعة</h2><span class="tag" id="deskTag">لم يتم الاختيار</span></div><div class="dbody" id="deskBody"><div class="empty">⌖<br>اختر قطعة من المخطط لعرض بيانات المنزل</div></div></aside>
+<aside class="card details"><div class="dhead"><h2>⌂ بيانات المنزل</h2><span class="tag" id="deskTag">اختر قطعة</span></div><div class="dbody" id="deskBody"><div class="empty">⌖<br>اضغط على رقم قطعة من المخطط لعرض بيانات المنزل</div></div></aside>
 </main>
-<div class="mobilebar"><div class="summary"><strong id="barTitle">لم يتم اختيار قطعة</strong><small id="barSub">اضغط على قطعة في المخطط</small></div><button class="tool primary" id="openPanel">التفاصيل</button></div>
-<div class="panel" id="panel"><div class="dhead"><h2>تفاصيل المنزل</h2><button class="close" id="closePanel">×</button></div><div class="dbody" id="mobileBody"><div class="empty">اختر قطعة من المخطط</div></div></div>
-<div class="modalback" id="modal"><div class="modal"><h3>تعديل بيانات القطعة</h3><form id="form"><label class="field">رقم القطعة<input id="fNum" disabled></label><label class="field">اسم العميل (اختياري)<input id="fName"></label><label class="field">رقم الجوال (اختياري)<input id="fPhone" inputmode="tel"></label><label class="field">ملاحظات<textarea id="fNotes"></textarea></label><label class="field">صورة المنزل<input type="file" id="fHome" accept="image/*"></label><label class="field">صورة عداد المياه<input type="file" id="fMeter" accept="image/*"></label><label class="field">صور إضافية<input type="file" id="fExtra" accept="image/*" multiple></label><div class="modalactions"><button type="button" class="tool" id="cancel">إلغاء</button><button class="tool primary">حفظ البيانات</button></div></form></div></div>
+<div class="mobilebar"><div class="summary"><strong id="barTitle">لم يتم اختيار قطعة</strong><small id="barSub">اضغط على قطعة في المخطط</small></div><button class="tool primary" id="openPanel">عرض التفاصيل</button></div>
+<div class="panel" id="panel"><div class="dhead"><h2>⌂ بيانات المنزل</h2><button class="close" id="closePanel">×</button></div><div class="dbody" id="mobileBody"><div class="empty">اختر قطعة من المخطط</div></div></div>
+<div class="lightbox" id="lightbox"><button id="closeLightbox" aria-label="إغلاق">×</button><img id="lightboxImg" alt="صورة مكبرة"></div>
 <script>
 const NS="http://www.w3.org/2000/svg";
 const groups=[
@@ -48,37 +51,34 @@ const groups=[
 {x:530,y:138,w:66,h:214,r:7,c:2,n:[25,26,27,28,29,30,31,32,33,34,35,36,37,38]},
 {x:779,y:138,w:73,h:231,r:7,c:2,n:[71,72,73,74,75,76,77,78,79,80,81,82,83,84]},
 {x:893,y:138,w:128,h:298,r:6,c:2,n:[174,175,176,175,178,179,178,183,181,183,182,183]},
-{x:232,y:235,w:143,h:72,r:2,c:6,n:[40,41,42,43,45,0,46,47,49,50,51,0]},
+{x:232,y:235,w:143,h:72,r:2,c:6,n:[40,41,42,43,44,45,46,47,48,49,50,51]},
 {x:385,y:230,w:84,h:125,r:4,c:2,n:[52,53,54,55,56,57,58,59]},
 {x:773,y:307,w:66,h:151,r:5,c:2,n:[85,86,89,88,91,92,93,94]},
 {x:532,y:377,w:172,h:80,r:2,c:5,n:[95,96,97,98,99,100,101,102,103,104]},
 {x:232,y:311,w:62,h:146,r:5,c:2,n:[128,129,130,131,132,133,128,129,0,0]},
-{x:304,y:387,w:166,h:69,r:2,c:6,n:[134,135,138,138,139,0,140,141,142,143,145,0]},
-{x:137,y:451,w:309,h:73,r:2,c:6,n:[146,147,148,0,149,150,152,153,154,155,156,157]},
-{x:531,y:474,w:373,h:78,r:2,c:8,n:[158,159,160,161,0,162,163,164,165,166,167,168,169,0,170,171,172,173]},
+{x:304,y:387,w:166,h:69,r:2,c:6,n:[134,135,138,138,139,140,141,142,143,144,145,0]},
+{x:137,y:451,w:309,h:73,r:2,c:6,n:[146,147,148,149,150,151,152,153,154,155,156,157]},
+{x:531,y:474,w:373,h:78,r:2,c:8,n:[158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173]},
 {x:893,y:474,w:65,h:72,r:2,c:2,n:[186,187,188,189]},
 {x:453,y:594,w:69,h:91,r:2,c:2,n:[190,191,192,193]},
-{x:535,y:594,w:370,h:91,r:2,c:10,n:[194,195,196,197,198,199,200,201,202,203,210,205,206,207,208,208,210,211,212,213]}
+{x:535,y:594,w:370,h:91,r:2,c:10,n:[194,195,196,197,198,199,200,201,202,203,210,205,206,207,208,209,210,211,212,213]}
 ];
-let selected=null,admin=false,zoom=1;const data=JSON.parse(localStorage.getItem("tarekPlots")||"{}");
-const $=id=>document.getElementById(id);
-function getData(n){return data[n]||{name:"",phone:"",notes:"",home:"",meter:"",extras:[]}}
-function saveAll(){localStorage.setItem("tarekPlots",JSON.stringify(data))}
-function draw(){const svg=$("overlay");svg.innerHTML="";groups.forEach(g=>g.n.forEach((n,i)=>{if(!n)return;let cw=g.w/g.c,ch=g.h/g.r,el=document.createElementNS(NS,"rect");el.setAttribute("x",g.x+(i%g.c)*cw+1);el.setAttribute("y",g.y+Math.floor(i/g.c)*ch+1);el.setAttribute("width",cw-2);el.setAttribute("height",ch-2);el.setAttribute("rx",3);el.setAttribute("class","plot"+(String(n)===String(selected)?" selected":""));el.dataset.num=n;el.onclick=()=>choose(n);svg.appendChild(el)}))}
-function esc(s){return String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
-function photo(src,label){return '<div class="photo">'+(src?'<img src="'+src+'" alt="'+label+'">':'')+'<span>'+(src?'عرض الصورة':label)+'</span></div>'}
-function details(n){let d=getData(n),extra=(d.extras||[]).slice(0,2).map(x=>photo(x,"صورة إضافية")).join("");return '<div class="tag">قطعة رقم '+n+'</div><div class="customer">'+(esc(d.name)||"اسم العميل غير مسجل")+'</div><div class="meta">'+(d.phone?'☎ '+esc(d.phone):'رقم الجوال غير مسجل')+'</div><div class="photos">'+photo(d.home,"صورة المنزل")+photo(d.meter,"عداد المياه")+(extra||photo("","صورة إضافية"))+'</div>'+(d.notes?'<div class="notes"><b>ملاحظات:</b><br>'+esc(d.notes)+'</div>':'')+(admin?'<div class="actions"><button class="tool primary" onclick="editPlot()">تعديل البيانات والصور</button></div>':'')}
-function choose(n){selected=String(n);draw();$("deskTag").textContent="قطعة "+n;$("deskBody").innerHTML=details(n);$("mobileBody").innerHTML=details(n);$("barTitle").textContent="القطعة رقم "+n;$("barSub").textContent=getData(n).name||"بيانات المنزل والصور";if(innerWidth<=850)$("panel").classList.add("open")}
-function editPlot(){if(!admin||!selected)return;let d=getData(selected);$("fNum").value=selected;$("fName").value=d.name||"";$("fPhone").value=d.phone||"";$("fNotes").value=d.notes||"";$("fHome").value="";$("fMeter").value="";$("fExtra").value="";$("modal").classList.add("show")}
-function fileData(f){return new Promise(resolve=>{if(!f)return resolve(null);let r=new FileReader();r.onload=()=>resolve(r.result);r.readAsDataURL(f)})}
-$("form").onsubmit=async e=>{e.preventDefault();if(!admin||!selected)return;let d=getData(selected);d.name=$("fName").value.trim();d.phone=$("fPhone").value.trim();d.notes=$("fNotes").value.trim();let h=await fileData($("fHome").files[0]),m=await fileData($("fMeter").files[0]);if(h)d.home=h;if(m)d.meter=m;for(let f of $("fExtra").files){let x=await fileData(f);if(x)d.extras.push(x)}data[selected]=d;saveAll();$("modal").classList.remove("show");choose(selected)};
-function setAdmin(v){admin=v;$("modeBtn").textContent=admin?"وضع المدير":"وضع المحصل";$("adminBtn").textContent=admin?"خروج المدير":"دخول المدير";if(selected)choose(selected)}
-$("adminBtn").onclick=()=>{if(admin){setAdmin(false);return}let p=prompt("كلمة مرور المدير التجريبية: 1234");if(p==="1234")setAdmin(true);else if(p!==null)alert("كلمة المرور غير صحيحة")};
-$("modeBtn").onclick=()=>{if(admin)setAdmin(false);else alert("أنت في وضع المحصل – العرض فقط")};
-$("cancel").onclick=()=>$("modal").classList.remove("show");$("closePanel").onclick=()=>$("panel").classList.remove("open");$("openPanel").onclick=()=>{if(selected)$("panel").classList.add("open")};
-function search(){let v=$("search").value.trim(),el=[...document.querySelectorAll(".plot")].find(x=>x.dataset.num===v);if(el){choose(v);el.scrollIntoView({behavior:"smooth",block:"center",inline:"center"})}else if(v)alert("رقم القطعة غير موجود ضمن القطع المرسومة تجريبياً")}
+const demo={name:"أحمد محمد",phone:"01012345678",notes:"بيانات وصور تجريبية لشرح فكرة النظام للعميل.",photos:[
+{url:"https://dehome.ai/nuxt_img/floor-plan-editor/example/architectural-elevation-example.webp",label:"صورة المنزل"},
+{url:"https://static.wixstatic.com/media/831332_e50d4ae953164dc9a19f9709879c6bd6~mv2.png/v1/fill/w_1000%2Ch_571%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01/831332_e50d4ae953164dc9a19f9709879c6bd6~mv2.png",label:"عداد المياه"},
+{url:"https://www.inmobiliariaesmar.com/img/slider_2_pisos-casas-parcelas-algimia-alfara.png?noCache=1887931017",label:"واجهة المنزل"},
+{url:"https://lirp.cdn-website.com/17a155d8/dms3rep/multi/opt/residential-water-metar-1920w.jpg",label:"صورة إضافية للعداد"}
+]};
+let selected=null,zoom=1;const $=id=>document.getElementById(id);
+function draw(){const svg=$("overlay");svg.innerHTML="";groups.forEach(g=>g.n.forEach((n,i)=>{if(!n)return;let cw=g.w/g.c,ch=g.h/g.r,el=document.createElementNS(NS,"rect");el.setAttribute("x",g.x+(i%g.c)*cw+1);el.setAttribute("y",g.y+Math.floor(i/g.c)*ch+1);el.setAttribute("width",cw-2);el.setAttribute("height",ch-2);el.setAttribute("rx",3);el.setAttribute("class","plot"+(String(n)===String(selected)?" selected":""));el.dataset.num=n;el.setAttribute("aria-label","القطعة رقم "+n);el.onclick=()=>choose(n);svg.appendChild(el)}))}
+function details(n){return '<div class="plot-title">قطعة رقم '+n+'</div><div class="photos">'+demo.photos.map((p,i)=>'<button class="photo" type="button" data-photo="'+i+'" aria-label="عرض '+p.label+'"><img loading="lazy" src="'+p.url+'" alt="'+p.label+'" onerror="this.style.display=\'none\'"><span>'+p.label+'</span></button>').join("")+'</div><div class="info"><div><div class="info-label">اسم العميل</div><div class="info-value">'+demo.name+'</div></div><span class="info-icon">●</span></div><div class="info"><div><div class="info-label">رقم الجوال</div><div class="info-value" dir="ltr">'+demo.phone+'</div></div><span class="info-icon">☎</span></div><div class="info"><div><div class="info-label">ملاحظات</div><div class="info-value" style="font-size:13px;font-weight:500">'+demo.notes+'</div></div><span class="info-icon">▤</span></div><div class="actions"><a class="call" href="tel:'+demo.phone+'">☎ اتصال</a><button class="gallery" type="button" id="showGallery">▣ عرض الصور</button></div><div class="notice">هذه بيانات وصور افتراضية للعرض فقط</div>'}
+function bindPhotos(root){root.querySelectorAll("[data-photo]").forEach(btn=>btn.onclick=()=>openPhoto(Number(btn.dataset.photo)));let gallery=root.querySelector("#showGallery");if(gallery)gallery.onclick=()=>openPhoto(0)}
+function choose(n){selected=String(n);draw();$("deskTag").textContent="قطعة "+n;$("deskBody").innerHTML=details(n);$("mobileBody").innerHTML=details(n);bindPhotos($("deskBody"));bindPhotos($("mobileBody"));$("barTitle").textContent="القطعة رقم "+n;$("barSub").textContent="اسم العميل: "+demo.name;if(innerWidth<=900)$("panel").classList.add("open")}
+function openPhoto(i){$("lightboxImg").src=demo.photos[i].url;$("lightbox").classList.add("show")}
+function search(){let v=$("search").value.trim(),el=[...document.querySelectorAll(".plot")].find(x=>x.dataset.num===v);if(el){choose(v);el.scrollIntoView({behavior:"smooth",block:"center",inline:"center"})}else if(v)alert("رقم القطعة غير موجود في المخطط التجريبي")}
 $("go").onclick=search;$("search").onkeydown=e=>{if(e.key==="Enter")search()};
-function zoomTo(){ $("stage").style.width=(100*zoom)+"%"}$("zin").onclick=()=>{zoom=Math.min(2.5,zoom+.2);zoomTo()};$("zout").onclick=()=>{zoom=Math.max(.7,zoom-.2);zoomTo()};$("reset").onclick=()=>{zoom=1;zoomTo();$("mapScroll").scrollTo({top:0,left:0,behavior:"smooth"})};
+function zoomTo(){$("stage").style.width=(100*zoom)+"%"}$("zin").onclick=()=>{zoom=Math.min(2.5,zoom+.2);zoomTo()};$("zout").onclick=()=>{zoom=Math.max(.7,zoom-.2);zoomTo()};$("reset").onclick=()=>{zoom=1;zoomTo();$("mapScroll").scrollTo({top:0,left:0,behavior:"smooth"})};
+$("openPanel").onclick=()=>{if(selected)$("panel").classList.add("open")};$("closePanel").onclick=()=>$("panel").classList.remove("open");$("closeLightbox").onclick=()=>$("lightbox").classList.remove("show");$("lightbox").onclick=e=>{if(e.target===$("lightbox"))$("lightbox").classList.remove("show")};
 draw();
 </script>
 </body></html>
