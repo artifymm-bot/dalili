@@ -7,7 +7,7 @@
 :root{--navy:#075B43;--green:#08764F;--green-dark:#064B38;--green-soft:#E8F3EE;--bg:#F4F7F5;--line:#DCE7E1;--muted:#718078;--ink:#1D3028;--gold:#B89A5A}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif}
 header{height:76px;background:linear-gradient(110deg,var(--green-dark),var(--navy));color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 18px;gap:12px;position:sticky;top:0;z-index:10;box-shadow:0 3px 14px #102b4620}
-.brand{display:flex;align-items:center;gap:12px;font-size:21px;font-weight:800;letter-spacing:-.3px}.mark{width:46px;height:46px;border-radius:14px;background:#ffffff14;border:1px solid #ffffff35;display:grid;place-items:center;padding:5px}.brand-copy{display:flex;flex-direction:column;gap:3px}.brand-copy small{font-size:11px;font-weight:500;opacity:.78;letter-spacing:0}
+.brand{display:flex;align-items:center;min-width:0}.brand-logo{display:block;width:250px;height:64px;object-fit:contain;object-position:right center}@media(max-width:480px){.brand-logo{width:205px;height:58px}}
 .demo-label{background:#ffffff14;border:1px solid #ffffff45;border-radius:9px;padding:8px 13px;font-size:12px;font-weight:700;color:#fff}
 main{max-width:1600px;margin:auto;padding:14px;display:grid;grid-template-columns:minmax(0,1fr) 370px;gap:14px}
 .card{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 5px 22px #15283b0b}
@@ -30,7 +30,7 @@ button{cursor:pointer;font-family:inherit}.tool{border:1px solid var(--line);bac
 </style>
 </head>
 <body>
-<header><div class="brand"><div class="mark"><img src="assets/dalili-mark.svg" alt="" width="36" height="36"></div><div class="brand-copy"><span>دليلي</span><small>منصة استعراض المواقع والوحدات</small></div></div><div class="demo-label">نسخة تجريبية</div></header>
+<header><div class="brand"><img class="brand-logo" src="assets/dalili-horizontal.svg" alt="دليلي – منصة استعراض المواقع والوحدات"></div><div class="demo-label">نسخة تجريبية</div></header>
 <main>
 <section class="card">
 <div class="map-top"><div class="search"><input id="search" type="search" placeholder="ابحث برقم القطعة"></div><button class="tool primary" id="go">انتقال</button><button class="tool" id="zin" aria-label="تكبير">＋</button><button class="tool" id="zout" aria-label="تصغير">－</button><button class="tool" id="reset">ملاءمة</button></div>
