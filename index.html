@@ -2,39 +2,39 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#123f78"><title>طارق | نظام محصل المياه</title>
+<meta name="theme-color" content="#075B43"><meta name="description" content="دليلي — منصة تفاعلية لاستعراض المواقع والوحدات السكنية وبياناتها."><link rel="icon" type="image/svg+xml" href="assets/dalili-mark.svg"><title>دليلي | دليل المواقع</title>
 <style>
-:root{--navy:#123f78;--blue:#1676df;--bg:#f1f5fa;--line:#dce5ef;--muted:#6d7d90}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#14243a;font-family:Tahoma,Arial,sans-serif}
-header{height:70px;background:linear-gradient(110deg,#123b70,#0b2e5a);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 18px;gap:12px;position:sticky;top:0;z-index:10;box-shadow:0 3px 14px #102b4620}
-.brand{display:flex;align-items:center;gap:12px;font-size:21px;font-weight:800}.mark{width:42px;height:42px;border-radius:50%;background:#ffffff18;display:grid;place-items:center;font-size:25px}
-.demo-label{background:#ffffff18;border:1px solid #ffffff45;border-radius:20px;padding:8px 13px;font-size:12px;font-weight:700}
+:root{--navy:#075B43;--green:#08764F;--green-dark:#064B38;--green-soft:#E8F3EE;--bg:#F4F7F5;--line:#DCE7E1;--muted:#718078;--ink:#1D3028;--gold:#B89A5A}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif}
+header{height:76px;background:linear-gradient(110deg,var(--green-dark),var(--navy));color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 18px;gap:12px;position:sticky;top:0;z-index:10;box-shadow:0 3px 14px #102b4620}
+.brand{display:flex;align-items:center;gap:12px;font-size:21px;font-weight:800;letter-spacing:-.3px}.mark{width:46px;height:46px;border-radius:14px;background:#ffffff14;border:1px solid #ffffff35;display:grid;place-items:center;padding:5px}.brand-copy{display:flex;flex-direction:column;gap:3px}.brand-copy small{font-size:11px;font-weight:500;opacity:.78;letter-spacing:0}
+.demo-label{background:#ffffff14;border:1px solid #ffffff45;border-radius:9px;padding:8px 13px;font-size:12px;font-weight:700;color:#fff}
 main{max-width:1600px;margin:auto;padding:14px;display:grid;grid-template-columns:minmax(0,1fr) 370px;gap:14px}
 .card{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 5px 22px #15283b0b}
 .map-top{display:flex;gap:8px;padding:12px;border-bottom:1px solid var(--line);align-items:center;flex-wrap:wrap}
 .search{flex:1;min-width:170px}.search input{width:100%;border:1px solid var(--line);background:#f7f9fc;border-radius:11px;padding:12px;font-size:14px;outline:none}
-button{cursor:pointer;font-family:inherit}.tool{border:1px solid var(--line);background:white;border-radius:10px;padding:10px 13px;font-weight:700;color:#33465b}.primary{background:var(--blue);border-color:var(--blue);color:white}
+button{cursor:pointer;font-family:inherit}.tool{border:1px solid var(--line);background:white;border-radius:10px;padding:10px 13px;font-weight:700;color:#33465b}.primary{background:var(--green);border-color:var(--green);color:white}.primary:hover{background:var(--green-dark)}
 .hint{font-size:12px;color:var(--muted);padding:10px 13px}.map-scroll{overflow:auto;max-height:calc(100vh - 190px);background:#f8fafc;touch-action:pan-x pan-y}
 .stage{position:relative;width:100%;min-width:650px;line-height:0}.stage img{display:block;width:100%;height:auto;pointer-events:none;user-select:none}
-#overlay{position:absolute;inset:0;width:100%;height:100%}.plot{fill:#1685e5;fill-opacity:.015;stroke:#1478d2;stroke-opacity:.08;stroke-width:1.1;vector-effect:non-scaling-stroke;cursor:pointer}.plot:hover{fill-opacity:.28;stroke-opacity:.9;stroke-width:2.4}.plot.selected{fill:#1685e5;fill-opacity:.6;stroke:#075cae;stroke-opacity:1;stroke-width:3}
-.legend{padding:10px 13px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}.dot{width:10px;height:10px;border-radius:50%;background:#1676df;display:inline-block}
+#overlay{position:absolute;inset:0;width:100%;height:100%}.plot{fill:#08764F;fill-opacity:.015;stroke:#08764F;stroke-opacity:.1;stroke-width:1.1;vector-effect:non-scaling-stroke;cursor:pointer}.plot:hover{fill-opacity:.28;stroke-opacity:.9;stroke-width:2.4}.plot.selected{fill:#0B8A5A;fill-opacity:.58;stroke:#064B38;stroke-opacity:1;stroke-width:3}
+.legend{padding:10px 13px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}.dot{width:10px;height:10px;border-radius:50%;background:#08764F;display:inline-block}
 .details{position:sticky;top:84px;height:fit-content;max-height:calc(100vh - 100px);overflow:auto}
-.dhead{padding:17px;background:#124782;color:white;display:flex;justify-content:space-between;align-items:center}.dhead h2{font-size:18px;margin:0}.tag{font-size:12px;background:#e7f1ff;color:#1264ad;border-radius:20px;padding:7px 11px;font-weight:800}
-.dbody{padding:14px}.empty{text-align:center;color:var(--muted);padding:35px 10px;line-height:2}.plot-title{background:#e8f1ff;color:#102d58;text-align:center;padding:12px;border-radius:12px;font-size:21px;font-weight:800;margin-bottom:12px}
+.dhead{padding:17px;background:linear-gradient(110deg,#075B43,#08764F);color:white;display:flex;justify-content:space-between;align-items:center}.dhead h2{font-size:18px;margin:0}.tag{font-size:12px;background:#E8F3EE;color:#075B43;border-radius:20px;padding:7px 11px;font-weight:800}
+.dbody{padding:14px}.empty{text-align:center;color:var(--muted);padding:35px 10px;line-height:2}.plot-title{background:#E8F3EE;color:#064B38;text-align:center;padding:12px;border-radius:12px;font-size:21px;font-weight:800;margin-bottom:12px}
 .photos{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.photo{aspect-ratio:4/3;background:#edf2f7;border-radius:11px;overflow:hidden;position:relative;border:1px solid var(--line);padding:0}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .2s}.photo:hover img{transform:scale(1.04)}.photo span{position:absolute;bottom:7px;right:7px;background:#ffffffdf;color:#20354c;padding:5px 8px;border-radius:7px;font-size:11px;font-weight:700}
-.info{border-bottom:1px solid var(--line);padding:11px 2px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.info:last-of-type{border:0}.info-label{color:#64748b;font-size:12px;margin-bottom:5px}.info-value{font-weight:800;font-size:16px;line-height:1.5}.info-icon{font-size:19px;color:#15569a}
-.actions{display:flex;gap:8px;margin-top:14px}.actions a,.actions button{flex:1;text-align:center;text-decoration:none;border-radius:11px;padding:12px 8px;font-weight:800;font-size:13px}.call{background:#1676df;color:white}.gallery{background:white;color:#1264ad;border:1px solid #9fc6f6}
+.info{border-bottom:1px solid var(--line);padding:11px 2px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.info:last-of-type{border:0}.info-label{color:#64748b;font-size:12px;margin-bottom:5px}.info-value{font-weight:800;font-size:16px;line-height:1.5}.info-icon{font-size:19px;color:#08764F}
+.actions{display:flex;gap:8px;margin-top:14px}.actions a,.actions button{flex:1;text-align:center;text-decoration:none;border-radius:11px;padding:12px 8px;font-weight:800;font-size:13px}.call{background:#08764F;color:white}.gallery{background:white;color:#075B43;border:1px solid #B8D5C7}
 .notice{font-size:11px;color:#748398;text-align:center;padding:10px 0 0}
 .mobilebar{display:none}.panel{display:none}.lightbox{position:fixed;inset:0;background:#06172dcc;z-index:50;align-items:center;justify-content:center;padding:18px;display:none}.lightbox.show{display:flex}.lightbox img{max-width:min(900px,96vw);max-height:86vh;object-fit:contain;border-radius:12px}.lightbox button{position:absolute;top:18px;left:18px;background:white;border:0;border-radius:50%;width:40px;height:40px;font-size:25px}
 @media(max-width:900px){main{display:block;padding:8px}.details{display:none}.map-scroll{max-height:calc(100dvh - 160px)}.stage{min-width:720px}.mobilebar{display:flex;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));z-index:12;align-items:center;gap:10px;box-shadow:0 -5px 20px #14283a12}.summary{flex:1;min-width:0}.summary strong{display:block;font-size:13px}.summary small{color:var(--muted)}.panel{display:block;position:fixed;inset:auto 0 0;background:white;border-radius:20px 20px 0 0;z-index:25;box-shadow:0 -10px 40px #102b4630;max-height:83dvh;overflow:auto;transform:translateY(110%);transition:transform .22s;padding-bottom:calc(74px + env(safe-area-inset-bottom))}.panel.open{transform:translateY(0)}.panel .dhead{position:sticky;top:0}.close{border:0;background:#ffffff25;color:white;border-radius:50%;width:32px;height:32px;font-size:21px}}
 </style>
 </head>
 <body>
-<header><div class="brand"><div class="mark">💧</div><div>نظام محصل المياه</div></div><div class="demo-label">نسخة تجريبية للعرض</div></header>
+<header><div class="brand"><div class="mark"><img src="assets/dalili-mark.svg" alt="" width="36" height="36"></div><div class="brand-copy"><span>دليلي</span><small>منصة استعراض المواقع والوحدات</small></div></div><div class="demo-label">نسخة تجريبية</div></header>
 <main>
 <section class="card">
 <div class="map-top"><div class="search"><input id="search" type="search" placeholder="ابحث برقم القطعة"></div><button class="tool primary" id="go">انتقال</button><button class="tool" id="zin" aria-label="تكبير">＋</button><button class="tool" id="zout" aria-label="تصغير">－</button><button class="tool" id="reset">ملاءمة</button></div>
-<div class="hint">اضغط على أي قطعة في المخطط لعرض بيانات المنزل والصور التجريبية.</div>
+<div class="hint">اختر قطعة من المخطط لاستعراض بيانات الموقع والصور التوضيحية.</div>
 <div class="map-scroll" id="mapScroll"><div class="stage" id="stage"><img src="assets/demo-plan.svg" alt="مخطط تجريبي للمنطقة السكنية"><svg id="overlay" viewBox="0 0 1117 746" preserveAspectRatio="none" aria-label="اختيار قطعة"></svg></div></div>
 <div class="legend"><span class="dot"></span> القطعة المحددة <span style="margin-right:auto">مخطط وصور تجريبية قابلة للاستبدال بالبيانات الأصلية</span></div>
 </section>
