@@ -64,9 +64,9 @@ const groups=[
 {x:535,y:594,w:370,h:91,r:2,c:10,n:[194,195,196,197,198,199,200,201,202,203,210,205,206,207,208,209,210,211,212,213]}
 ];
 const demo={name:"عبدالله محمد العتيبي",phone:"+966551234567",account:"100245",district:"حي الياسمين – الرياض",latitude:"24.813000",longitude:"46.675300",notes:"بيانات سعودية افتراضية لغرض عرض الفكرة فقط.",photos:[
-{url:"assets/demo-home.svg",label:"واجهة المنزل"},
-{url:"assets/demo-electricity.svg",label:"عداد الكهرباء"},
-{url:"assets/demo-meter.svg",label:"عداد المياه"}
+{url:"https://images.pexels.com/photos/13752348/pexels-photo-13752348.jpeg?cs=srgb&dl=pexels-fotografiagmazg-13752348.jpg&fm=jpg",label:"واجهة المنزل"},
+{url:"https://images.pexels.com/photos/12274476/pexels-photo-12274476.jpeg?cs=srgb&dl=pexels-robertkso-12274476.jpg&fm=jpg",label:"عداد الكهرباء"},
+{url:"https://images.pexels.com/photos/11658940/pexels-photo-11658940.jpeg?cs=srgb&dl=pexels-jan-van-der-wolf-11680885-11658940.jpg&fm=jpg",label:"عداد المياه"}
 ]};
 let selected=null,zoom=1;const $=id=>document.getElementById(id);
 function draw(){const svg=$("overlay");svg.innerHTML="";groups.forEach(g=>g.n.forEach((n,i)=>{if(!n)return;let cw=g.w/g.c,ch=g.h/g.r,el=document.createElementNS(NS,"rect");el.setAttribute("x",g.x+(i%g.c)*cw+1);el.setAttribute("y",g.y+Math.floor(i/g.c)*ch+1);el.setAttribute("width",cw-2);el.setAttribute("height",ch-2);el.setAttribute("rx",3);el.setAttribute("class","plot"+(String(n)===String(selected)?" selected":""));el.dataset.num=n;el.setAttribute("aria-label","القطعة رقم "+n);el.onclick=()=>choose(n);svg.appendChild(el)}))}
